@@ -45,7 +45,7 @@ export function generateOpenApiDocs(
         ...options,
         paths,
         components: {
-            schemas: options.schemas || {},
+            schemas: options.components?.schemas || {},
         },
     };
 }
